@@ -9,7 +9,7 @@
 
 
 body{
-    height: 100vh;
+    height: 500vh;
     font-family: "inter";
 }
 
@@ -406,6 +406,66 @@ body{
     font-weight: 400;
 }
 
+.images-7{
+    height: 100%;
+    width: 30%
+}
+
+.section-6{
+    width: 100%;
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    background-color: #F5F7FA;
+}
+.child-div-4{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: black; */
+    justify-content: start;
+    gap: 30px;
+    
+
+}
+
+.Paragrafi-10{
+    color: #717171;
+    line-height: 26px;
+    font-size: 18px;
+}
+
+.h4{
+    color: #4CAF4F;
+    font-weight: 600;
+    font-size: 18px;
+
+
+}
+
+.parent-div-6{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 45px;
+
+
+
+}
+
+
+.Green-P{
+    font-size: 16px;
+    color: #4CAF4F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+}
 @media (max-width: 1000px){
     .parent-div{
         display: grid;
@@ -505,6 +565,24 @@ body{
     .box-1{
         column-gap: 10px;
     }
+    .images-7{
+        width: 75%;
+    }
+    .section-6{
+        flex-direction: column;
+        padding: 30px;
+    }
+    .child-div-4{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .parent-div-6{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 
@@ -568,5 +646,8 @@ body{
     .child-div-3{
         display: flex;
         flex-direction: column;
+    }
+    .images-7{
+        width: 100%
     }
 }
