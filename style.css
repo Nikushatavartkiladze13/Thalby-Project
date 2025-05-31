@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -7,198 +9,186 @@
 
 
 body{
-    font-family: "Inter";
+    background-color: 	#0f0f0f;
+    font-family: "Roboto";
     height: 300vh;
     overflow-x: hidden;
 }
-button{
+button, ul{
     cursor: pointer;
+}
+.nav{
+    display: flex;
+    gap: 50px;
 }
 .header{
     width: 100%;
-    padding: 20px 20px;
+    padding: 22px;
     display: flex;
-    align-items: center;
     justify-content: space-around;
-    background-color: white;
-    z-index: 999;
+    align-items: center;
+    
 }
-
-.nav-1{
+.Logo-images{
+    width: 150px;
+}
+.ul{
+    color: #ff824c;
     display: flex;
-    list-style-type: none;
+    justify-content: center;
+    align-items: center;
     gap: 35px;
-    color: #2F3A3B;
-    font-weight: 400;
-    font-size: 16px;
-    cursor: pointer
+    list-style-type: none;
+    font-size: 1.1rem;
 }
-
-#Menu{
+#search{
+    color: #ff824c;
+    font-size: 2rem;
+}
+.Menu{
     display: none;
 }
-
-.button-1{
-    padding: 12px 20px;
-    border: none;
-    background-color: white;
-    font-size: 16px;
-    color: #494949;
-    font-weight: 400;
-
-}
-
-.hero{
-    position: relative;
+.button-div{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 90vh;
+    gap: 10px;
+
 }
 
-.button-2{
-    padding: 12px 20px;
-    border: 1px solid #003478;
-    color: #003478;
-    font-size: 16px;
+.log-in{
+    padding: 13px 23px;
+    border: none;
+    background: none;
+    color: #FF6B2C;
+    font-size: 1rem;
     font-weight: 600;
-    background-color: white;
-
-}
-
-.lines {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-    width: 100%;
-    gap: 16px;
-    position: relative;
-}
-
-.lines div{
-    background-color: #303231;
-    color: white;
-    width: 100%;
-    height: 64.5px;
-}
-
-.mustang-conteiner{
-    display: flex;
-    align-items: center;
-    /* justify-content: center; */
-    width: 100%;
-}
-
-.mustang-conteiner img{
-    position: absolute;
-    /* z-index: 4; */
-    right: -600px;
-    top: 50%;
-    transform: translateY(-52%);
     
 }
-.hero-text{
-    position: absolute;
-    z-index: 111;
-    top: 50%;
-    transform: translateY(-62%);
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: start;
-    gap: 50px;
-    left: 8%;
+
+.sign-in{
+    padding: 13px 23px;
+    border: 2px solid #FF6B2C;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #FF6B2C;
+    background: none;
+    border-radius: 2px;
 }
 
-.hero-text h1{
-    color: #152137;
-    font-size: 72px;
-    font-weight: 300;
-    font-family: "Roboto";
-    line-height: 68px;
+
+.hero-section{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70vh;
+}
+
+.hero-text{
+    /* width: 50%; */
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    position: relative;
+    right: 20%;
+    transform: translateX(52%);
+}
+.heading-1{
+    color: white;
+    font-size: 100px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    width: 554px;
+}
+
+.Shop-now{
+    text-transform: uppercase;
+    width: 160px;
+    padding: 15px 0px;
+    border: none;
+    border-radius: 22px;
+    background-color: #A74324;
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+}
+.menu-section{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+
+}
+.menu-div-1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+.heading-2{
+    color: white;
+    font-size: 40px;
+    font-weight: 400;
+    position: relative;
+    left: 20%;
+    transform: translateX(-47%);
     text-transform: uppercase;
 }
-.hero-text h1 span{
-    color: #fbaa0c;
-    font-size: 72px;
-    font-weight: 700;
+.paragraph{
+    color: #FF6B2C;
+    font-size: 20px;
+    text-transform: uppercase;
+    position: relative;
+    right: 10%
 }
-
-.hero-text p{
-    font-family: "Roboto", serif;
-    font-size: 50px;
-    font-weight: 300;
-    color: white;
-
-}
-
-.hero-text p span{
-    color: white;
-    font-size: 30px;
-    font-weight: 300;
-    
-}
-.hero-text div{
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    padding: 60px 0px 0px 0px;
-    gap: 10px;
-    background-color: transparent;
-
-}
-.build{
-    padding: 20px 30px;
-    background-color: #003478;
-    border: none;
-    color: white;
-    font-size: 14px;
-    cursor: pointer
-}
-.Watch{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 17px;
-    font-size: 14px;
-    padding: 5px;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-}
-
-.Watch div{
-    background-color: #003478;
-    padding: 16.5px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-@media(max-width: 900px){
+@media (max-width: 995px){
     .header{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas: 
-        "   menu-1   images-1   div-2   ";
+        "   Menu-1   Logo-images   .   ";
         justify-items: center;
         align-items: center;
-        align-content: center;
-        justify-content: center;
     }
-    .nav-1{
+    .hero-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        bottom: 20%;
+        transform: translateY(20%);
+    }
+    .Logo-images{
+        grid-area: Logo-images;
+    }
+    .ul{
         display: none;
     }
-    .images-1{
-        grid-area: images-1;
+    .Menu{
+        display: block;
+        grid-area: Menu-1;
     }
-    #Menu{
-        display: flex;
-        grid-area: menu-1;
+    .hero-text{
+        width: 100%;
+        right: 0;
+        transform: translateX(0px);
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 20px;
     }
-    .div-2{
-        grid-area: div-2;
+    .heading-1{
+        width: 400px;
+        font-size: 60px;
+    }
+    .Time-images{
+        transform: rotate(-90deg);
+    }
+    .menu-section{
+        margin-top: 150px
     }
 }
