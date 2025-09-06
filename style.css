@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,209 +8,87 @@
 }
 
 
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: linear-gradient(to right, rgb(103, 24, 255),rgb(136, 25, 219));
+    background-color: #d6d6d6;
     font-family: "Roboto";
 }
 
 
-
-.parent-div{
-    background-color: white;
-    padding: 30px 40px;
+.calculator-div {
+    padding: 35px 25px 55px;
+    border-radius: 12px;
+    box-shadow: -5px -5px 10px #eeeeee,
+        5px 5px 10px #bdb7b7;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    gap: 20px;
-    border-radius: 20px;
-
-}
-
-.form-div{
-    padding: 20px;
-    display: flex;
+    gap: 40px;
     flex-direction: column;
-    gap: 11px;
-
 }
-#enter-task{
+
+
+.button-div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     width: 100%;
-    padding: 10px;
-    background-color: rgb(255, 230, 227);
-    color: #f58090;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 3px;
-    transition: 4s;
-    animation: task 1s ease;
-}
-@keyframes task {
-    from{
-        opacity: 0;
-        transform: translateY(-5px);
-    }
-    to{
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}
-form input{
-    border: 2px solid rgb(103, 24, 255);
-    padding: 10px 90px 10px 20px;
-    border-radius: 8.5px;
-    background-color: #ffff;
-    outline: none;
-    caret-color: black;
-    font-size: 1.03rem;
-    color: #7b7c7d;
-    
-    
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 12px;
+    row-gap: 16px;
 }
 
-form input::placeholder{
-    color: #a2a4a7;
-    font-size: 1rem;
-}
-
-
-button{
-    padding: 15px 25px;
-    font-size: 1rem;
-    border-radius: 5px;
-    color: white;
-    background-image: linear-gradient(to right,rgb(103, 24, 255),rgb(136, 25, 219));
-    background-repeat: no-repeat;
-    background-position: right;
-    border: none;
+button {
+    padding: 20px 22px;
     cursor: pointer;
     transition: 0.5s;
-    font-weight: 600;
-
-}
-
-button:active{
-    transform: scale(1.1);
-}
-h1{
-    color: #1f2937;
-     
-}
-
-#task-div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 20px;
-    gap: 10px;
-    width: 100%;
-
-
-}
-
-#task-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-    gap: 10px;
-    width: 100%;
-
-
-}
-
-
-.task-div-2{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    width: 100%;
-    background-color: white;
-    box-shadow: 0px 0px 10px rgba(58, 58, 58, 0.142);
-    border-radius: 10px;
-}
-
-.x{
-    cursor: pointer;
+    border: none;
     font-size: 1.2rem;
-    font-weight: 700;
-    opacity: 60%;
+    background-color: #d6d6d6;
+    box-shadow: -5px -5px 10px #eeeeee,
+        5px 5px 10px #bdb7b7;
+    border-radius: 8.5px;
+    font-weight: 600;
+    color: black;
 }
 
-.check{
-    width:20px;
-    height: 20px;
-    caret-color: transparent;
-    background-color:  green;
-    accent-color: green;
-    cursor: pointer;
+button:hover {
+    transform: scale(1.03);
 }
-#task-div-3{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+
+.button {
+    background-color: black;
+    color: white;
+    font-weight: 600;
+}
+
+.c-button {
+    background-color: #fa0401;
+    color: white;
+    font-size: 1.3rem;
+}
+
+
+form {
     width: 100%;
-    background-color: white;
-    box-shadow: 0px 0px 10px rgba(58, 58, 58, 0.142);
-    border-radius: 10px;
-}
-#task-div-4{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 20px;
-    width: 100%;
-    background-color: white;
-    box-shadow: 0px 0px 10px rgba(58, 58, 58, 0.142);
-    border-radius: 10px;
+
 }
-@media (max-width: 560px) {
-    body {
-        padding: 20px;
-    }
 
-    .parent-div {
-        width: 100%;
-        padding: 20px;
-    }
-
-    form input {
-        padding: 10px 20px;
-        font-size: 0.9rem;
-    }
-
-    button {
-        padding: 12px 20px;
-        font-size: 0.9rem;
-    }
-
-    h1 {
-        font-size: 1.5rem;
-    }
-
-    .task-div-2 {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-    }
-
-    .check {
-        width: 18px;
-        height: 18px;
-    }
-
-    .x {
-        font-size: 1rem;
-    }
+input {
+    width: 100%;
+    padding: 20px 16px;
+    text-align: right;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #7e7e7f;
+    font-size: 1.1rem;
+    font-weight: 600;
+    box-shadow: inset -5px -5px 10px #f5f5f5,
+       inset 5px 5px 10px #bdb7b791;
 }
